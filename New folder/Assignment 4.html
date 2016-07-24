@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+
+Text and UrL remains the same : <a href="http://www.acadgild.com" >PostgreSQL Tutorial</a> </br>
+Text and UrL changes after the load: <a id='acadgild' href="https://www.acadgild.com"  "> jQuery Tutorial</a>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	alert("load");
+	$("#acadgild").attr("href", "https://www.google.co.in");
+
+	$("#acadgild").text("MySQL Tutorial");
+	});
+</script>
+
+</body>
+</html>
